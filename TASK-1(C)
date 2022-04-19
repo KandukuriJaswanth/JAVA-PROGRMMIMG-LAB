@@ -1,0 +1,45 @@
+Task-1(c)
+c)	Write a java program that implements the method overloading.
+Aim: To write a java program that implements the method overloading.
+Description:
+1.	Method overloading is a feature of java   in which a class has more than one method of the same name and their parameters are different.
+2.	Method overloading can be done by changing number of arguments or by changing the data type of argument.
+3.	If two or more method have same and same parameter list but differs in return type  can not  be overloading.
+
+Algorithm:
+      Step-1:  Start the program.
+Step-2:  Create a class A.
+Step-3:  create two class methods in class A, one is with parameters and another one is with no parameters which calculate the area.
+Step-4:    Create the main method in another method.
+Step-5:  Create a new object for class A.
+Step-6:  Call two methods in class A by pass parameters if required.
+Step-7:   Stop the program.
+Program:
+ public     class A
+ {
+        int l=10,b=20;
+          int area()
+          { 
+                return l*b; 
+          }
+             int area(int l,int b)
+               { 
+                   return l*b;
+               } 
+   } 
+        class overmethoddemo 
+            { 
+                   public static void main(String args[])
+                    { 
+                            A a1=new A();
+                             int r1=a1.area(); 
+                         System.out.println("The area is: "+r1);
+                            int r2=a1.area(5,20); 
+                            System.out.println("The area is: "+r2); 
+                    }
+           }
+ Output: 
+The area is: 200
+ The area is: 100
+Result:  Thus , in the above program successfully executed without errors using method overloading.
+
