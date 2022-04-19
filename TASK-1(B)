@@ -1,0 +1,46 @@
+TASK-1(B)
+b)	Write  java programs that implements the parameterized constructor.
+ Aim: To write Java programs that implements the parameterized constructor.   
+ Description:
+                         A constructor is called parameterized constructor when it accepts a specific number of parameters.
+ It used to provide different values to distinct objects. However, we can provide the same values.
+Types of java constructors:
+We have two types in constructor:
+1)	No Argument constructor (Default constructor)
+2)	 Parameterized constructor
+No we are writing program for no constructors with no parameters and parameters.
+No parameters          =           parameterless constructor-------> Default constructor------>user-provided initialization values are provided.
+                                         
+Syntax for default constructor:
+   <class_name>(){ }
+Algorithm:
+Step-1: Start the program.
+Step-2: Create a constructor with parameters whose name is the same as the class  name.
+Step-3: Create an object in the main method and pass values to the constructor.
+Step-4: Stop. 
+Program:
+public class student4
+{
+   int id;
+   String name;
+   student4(  int I, String n);
+    {
+       id=i;
+      name=n;
+     }
+        Void display()
+          {
+            System.out.println(id+” ” +name);
+          }
+              public static void main(String args[])
+                {
+                       student4 s1=new student4 (111,”sai”);
+                       student4  s2= new student4 (202,”meher”);
+                        s1.diplay();
+                         s2.display();
+                   }
+ }
+Output:
+     111 sai
+     202  meher
+Result: Thus, in the above program successfully executed without errors using    parameterized constructor. 
